@@ -28,3 +28,12 @@ def FindWordCount(alist, astring):
         if i == astring:
             count += 1
     PrintOutput(count)
+
+def ScoreFinder(players, scores, name):
+    name = name.lower()
+    for i in range(len(players)):
+        players[i] = players[i].lower()
+    for i in range(0, len(players)):
+        if players[i] == name:
+            return ('OUTPUT', players[i], 'got a score of', scores[i])
+    return ('player not found')
