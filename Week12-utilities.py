@@ -37,3 +37,18 @@ def ScoreFinder(players, scores, name):
         if players[i] == name:
             return ('OUTPUT', players[i], 'got a score of', scores[i])
     return ('player not found')
+
+def Union(list1, list2):
+    list3 = list1 + list2
+    list4 = []
+    for i in range(len(list3)):
+        if list4.count(list3[i]) == 0:
+            list4.append(list3[i])
+    return list4
+
+
+
+
+
+
+
