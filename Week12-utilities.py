@@ -11,3 +11,15 @@ def LoadFile(filename):
     astring = filename.read()
     alist = astring.splitlines()
     return alist
+
+def UpdateString(a, b, c):
+    new_list = []
+    for i in a:
+        new_list.append(i)
+    new_list[c] = b
+    new_str = ''
+    for i in new_list:
+        new_str += i
+    PrintOutput(new_str)
+
+
