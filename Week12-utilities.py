@@ -54,6 +54,16 @@ def Intersection(list1, list2):
                 new_list.append(i)
     return new_list
 
+def NotIn(list1, list2):
+    list3 = []
+    for i in list1:
+        count = 0
+        for j in list2:
+            if i != j:
+                count += 1
+        if count == len(list2):
+            list3.append(list1[list1.index(i)])
+    return list3
 
 
 
