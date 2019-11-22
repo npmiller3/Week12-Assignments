@@ -22,4 +22,9 @@ def UpdateString(a, b, c):
         new_str += i
     PrintOutput(new_str)
 
-
+def FindWordCount(alist, astring):
+    count = 0
+    for i in alist:
+        if i == astring:
+            count += 1
+    PrintOutput(count)
